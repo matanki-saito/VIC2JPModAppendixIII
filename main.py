@@ -154,7 +154,6 @@ def generate_dot_mod_file(mod_title_name,
         lines = [
             'name="{}"'.format(mod_title_name),
             'archive="mod/{}.zip"'.format(mod_file_name),
-            'user_dir="{}"'.format(mod_user_dir_name),
             'tags={}'.format("{" + " ".join(map(lambda c: '"{}"'.format(c), mod_tags)) + "}"),
             'picture="{}"'.format(mod_image_file_path),
             'dependencies={}'.format("{" + " ".join(map(lambda c: '"{}"'.format(c), mod_dependencies)) + "}"),
